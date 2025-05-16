@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+        <div class="page-banner">
+          <h1 class="page-banner-title">Unsh Rawal</h1>
+          <p class="page-banner-subtitle">Software Developer</p>
+        </div>
+
+        {{ content }}
+      </div>
+      <section class="projects-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="card-grid">
+
+          <div class="project-card">
+            <h3>NASA STAR</h3>
+            <p>Built a real-time robot control system using ZeroMQ + JavaFX frontend.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>DSLabs Distributed Store</h3>
+            <p>Implemented Paxos-based sharded key-value store with fault-tolerance guarantees.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>G-Retriever @ RadiantLogic</h3>
+            <p>Improved anomaly explanations for RAG framework over graph data.</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

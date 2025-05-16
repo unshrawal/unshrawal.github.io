@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+I am a rising senior at UT Austin, majoring in computer science. I am strongly interested in computing systems from
+operating systems to large scale distributed databases. I have over 3 years of experience designing projects from the ground up & fullstack development.
