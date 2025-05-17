@@ -29,25 +29,78 @@ body {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .page-banner {
+  height: 100vh;
   text-align: center;
   margin: 3rem 0 2rem;
 
   .page-banner-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #dbdbdb;
   }
 
   .page-banner-subtitle {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #e3dde3;
+    font-size: 2.5rem;
+    //font-weight: 700;
+    padding-bottom: 4rem;
+    //color: #e3dde3;
+
+    background: linear-gradient(to right, #4fc3f7, #6c63ff, #b968f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
   }
 }
+
+.contact-section {
+  //#2e3134
+  background: linear-gradient(to bottom, #151b23, #2f2c34);
+  color: #f0f0f0;
+  text-align: center;
+  padding: 4rem 1rem;
+  
+}
+
+.contact-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-links a,
+.contact-links a:visited,
+.contact-links a:active {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
 
 .site-background {
   position: fixed;
@@ -62,7 +115,7 @@ body {
 
 .projects-section {
   padding-top: 4rem;
-  padding: 2rem 0;
+  //padding: 2rem 0;
   background-color: #151b23; /* darker background for contrast */
 }
 
