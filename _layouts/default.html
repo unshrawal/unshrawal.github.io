@@ -4,6 +4,7 @@
   {%- include head.html -%}
 
   <body>
+    <div class="site-background"></div>
 
     {%- include header.html -%}
 
@@ -17,30 +18,62 @@
 
         {{ content }}
       </div>
-      <section class="projects-section">
-        <h2 class="section-title">Experience</h2>
+      <section id="experience" class="projects-section">
+        <h2 class="section-title">EXPERIENCE</h2>
         <div class="card-grid">
 
           <div class="project-card">
-            <h3>NASA STAR</h3>
-            <p>Built a real-time robot control system using ZeroMQ + JavaFX frontend.</p>
+            <h2>NASA/ARISS</h2>
+            <h3>SWE Intern</h3>
+            <p>Developed a cross-platform distributed application to control robots locally & remotely via Bluetooth, internet, or APRS radio protocols.</p>
+          </div>
+          <div class="project-card">
+            <h2>RadiantLogic</h2>
+            <h3>SWE Intern</h3>
+            <p>Created a customer support Slack agent using Langchain, Pinecone vector databases, hosted on AWS ECS. Utilized AWS S3 to store conversations enabling the chatbot to learn from conversations. </p>
+          </div>
+          <div class="project-card">
+            <h2>RadiantLogic</h2>
+            <h3>SWE Intern</h3>
+            <p>Tested & benchmarked 
+                <a href="https://arxiv.org/pdf/2402.07630" target="_blank" rel="noopener">
+                  G-Retriever
+                </a>, a novel RAG technique for graph QA, on explaining anomalies in corporate hierarchies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="card-grid">
+
+          <div class="project-card">
+            <h2>Sharded Key-Value Store</h2>
+            <p>Implemented a Paxos-based distributed store supporting shard migration, reconfiguration, and maintaining liveness</p>
           </div>
 
           <div class="project-card">
-            <h3>DSLabs Distributed Store</h3>
-            <p>Implemented Paxos-based sharded key-value store with fault-tolerance guarantees.</p>
+            <h2>Paxos Consensus</h2>
+            <p>Implemented Paxos consensus to tolerate minority server failures, with round-robin leader election to ensure liveness during network partitions.</p>
           </div>
 
           <div class="project-card">
-            <h3>G-Retriever @ RadiantLogic</h3>
-            <p>Improved anomaly explanations for RAG framework over graph data.</p>
+            <h2>Pintos: User Programs</h2>
+            <p>Built user program support in Pintos with syscall handling, user memory validation, dynamic stack setup, file descriptor management, and write protections for running executables.</p>
+          </div>
+
+          <div class="project-card">
+            <h2>System Emulator</h2>
+            <p>Built a full-cycle simulator for a pipelined CPU with hazard detection, forwarding, and a two-level write-back cache, modeling stalls and cache penalties</p>
           </div>
 
         </div>
       </section>
+
     </main>
 
-    {%- include footer.html -%}
+    <!--{%- include footer.html -%} -->
 
   </body>
 
