@@ -46,9 +46,7 @@ body {
 
   .page-banner-subtitle {
     font-size: 2.5rem;
-    //font-weight: 700;
     padding-bottom: 4rem;
-    //color: #e3dde3;
 
     background: linear-gradient(to right, #4fc3f7, #6c63ff, #b968f2);
     -webkit-background-clip: text;
@@ -92,7 +90,7 @@ body {
 .contact-links a,
 .contact-links a:visited,
 .contact-links a:active {
-  color: #4fc3f7;
+  color: #bda4f3b9;
   text-decoration: none;
   font-weight: 600;
 }
@@ -145,6 +143,7 @@ body {
   transition: transform 0.2s ease;
   color: #e0e0e0;
   min-height: 250px;
+  position: relative;
 }
 
 .project-card h2 {
@@ -170,6 +169,33 @@ body {
 
 .project-card:hover {
   transform: translateY(-4px);
+}
+
+/* GitHub link styles */
+.github-link,
+.github-link:visited,
+.github-link:active{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  color: #a984fa;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.github-link:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.3rem;
 }
 
 /**
