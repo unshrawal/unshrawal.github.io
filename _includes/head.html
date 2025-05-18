@@ -5,7 +5,7 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production'}
+  {% if jekyll.environment == 'production' %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YP0CJZSBY6"></script>
     <script>
@@ -15,5 +15,5 @@
 
       gtag('config', 'G-YP0CJZSBY6');
     </script>
-  {%- endif -%}
+  {% endif %}
 </head>
